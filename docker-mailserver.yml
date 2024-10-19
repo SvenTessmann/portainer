@@ -41,4 +41,5 @@ services:
       - ENABLE_GETMAIL=0
       - ENABLE_POSTGREY=0
       - ENABLE_SASLAUTHD=0
+      - test 
     restart: always
