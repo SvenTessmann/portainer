@@ -6,8 +6,8 @@ services:
     hostname: mail.tessmann.internal
     ports:
       - "25:25"
-      - "465:465"
       - "587:587"
+      - "143:143"
       - "993:993"
     volumes:
       - ./docker-data/dms/mail-data/:/var/mail/
@@ -41,5 +41,4 @@ services:
       - ENABLE_GETMAIL=0
       - ENABLE_POSTGREY=0
       - ENABLE_SASLAUTHD=0
-      - test 
     restart: always
