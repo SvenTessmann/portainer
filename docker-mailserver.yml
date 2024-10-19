@@ -18,15 +18,13 @@ services:
     environment:
       - PERMIT_DOCKER=connected-networks
       - TZ=Europe/Berlin
-      - ENABLE_AMAVIV=0
-      - ENABLE_DNSBL=0
+      - ENABLE_AMAVIS=0
       - ENABLE_DNSBL=0
       - ENABLE_OPENDKIM=0
       - ENABLE_OPENDMARC=0
       - ENABLE_POLICYD_SPF=0
       - ENABLE_POP3=0
       - ENABLE_IMAP=1
-      - ENABLE_RSPAMD=1
       - ENABLE_CLAMAV=0
       - ENABLE_FAIL2BAN=0
       - SPOOF_PROTECTION=0
