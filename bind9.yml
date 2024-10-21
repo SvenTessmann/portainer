@@ -1,0 +1,14 @@
+services:
+  bind9:
+    container_name: bind9
+    image: internetsystemsconsortium/bind9:9.21
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "127.0.0.1:953:953/tcp"
+    volumes:
+      - /etc/docker/bind9/bind/:/etc/bind
+      - /etc/docker/bind9/cache/:/var/cache/bind/
+      - /etc/docker/bind9/lib/:/var/lib/bind/
+      - /etc/docker/bind9/log/:/var/log/
+    restart: always

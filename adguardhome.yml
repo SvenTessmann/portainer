@@ -8,9 +8,8 @@ services:
       - "80:80/tcp"
       - "443:443/tcp"
       - "3000:3000/tcp"
-    restart: unless-stopped
     volumes:
       - adguardhome_data:/opt/adguardhome/data
-
+    restart: unless-stopped
 volumes:
     adguardhome_data:
